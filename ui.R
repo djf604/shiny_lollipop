@@ -36,7 +36,7 @@ hiddenDataOutput <- function(inputId, dataTarget, dataProp) {
 
 
 fluidPage(
-  includeCSS('www/bootstrap-slider/css/bootstrap-slider.min.css'),
+  includeCSS('www/bootstrap-slider/bootstrap-slider.min.css'),
   includeScript('www/bootstrap-slider/bootstrap-slider.min.js'),
   includeScript('www/lollipop.js'),
   includeCSS('www/lollipop.css'),
