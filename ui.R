@@ -3,7 +3,7 @@ library(ggplot2)
 library('RSQLite')
 library(ggvis)
 
-genesDbPath <- '/home/dfitzgerald/workspace/RProjects/shiny_demo/lollipop.db'
+genesDbPath <- 'lollipop.db'
 genesDbConn <- dbConnect(SQLite(), genesDbPath)
 genesDbTable <- dbReadTable(genesDbConn, 'genes')
 print(genesDbTable)
