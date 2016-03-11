@@ -51,8 +51,8 @@ function(input, output) {
   
   
   gene = 'PIP4K2B'
-  allExons <- read.table('/home/dfitzgerald/workspace/RProjects/shiny_demo/lollipop/gene_models/CCDS.20110907.exons.txt', sep = '\t', header = F)
-  allVariants <- read.table('/home/dfitzgerald/workspace/RProjects/shiny_demo/lollipop/variants/PIP4K2B_two-hit_variants.txt', sep = '\t', header = F)
+  allExons <- read.table('lollipop/gene_models/CCDS.20110907.exons.txt', sep = '\t', header = F)
+  allVariants <- read.table('lollipop/variants/PIP4K2B_two-hit_variants.txt', sep = '\t', header = F)
   exons <- subset(allExons, V4 == gene)
   reMappedExons <- reMapExons(exons, 0, 25)
   variants <- subset(allVariants, V1 == gene)
